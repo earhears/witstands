@@ -2,20 +2,29 @@
    <body>
       <br>
        <h1 align="center">Hello World - greeting from Witstands @Hong Kong!</h1>
+       <br>
+       <label>Enter your name:</label>
+
+       <label for="nameInput">
+         <h3>Your name</h3>
+         <input id="nameInput" name="your-name" type="text" />
+         <button onclick="showWelcome()">Enter</button>
+       </label> 
+       <script>
+         function showWelcome() {
+           var name = document.getElementById("nameInput").value;
+           alert("Welcome " + name + "!"); 
+         }
+         </script>
 	   <br>
    <div align="center">
 	<img src="./image-cover.jpg" height="600px" width="450px" alt="Witstands Image" />
    </div>
 
-<label>Enter your name:</label>
-<input type="text" id="nameInput">
-<button onclick="showWelcome()">Submit</button>
-<script>
-function showWelcome() {
-  var name = document.getElementById("nameInput").value;
-  alert("Welcome " + name + "!"); 
-}
-</script>
+
+
+
+
 
    </body>
 </html>
