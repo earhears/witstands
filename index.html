@@ -6,5 +6,16 @@
    <div align="center">
 	<img src="./image-cover.jpg" height="600px" width="450px" alt="Witstands Image" />
    </div>
+
+<label>Enter your name:</label>
+<input type="text" id="nameInput">
+<button onclick="showWelcome()">Submit</button>
+<script>
+function showWelcome() {
+  var name = document.getElementById("nameInput").value;
+  alert("Welcome " + name + "!"); 
+}
+</script>
+
    </body>
 </html>
