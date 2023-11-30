@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Information</title>
+</head>
+<body>
+
+<h1>Stock Information</h1>
+
+<label for="stockSymbol">Enter Stock Symbol:</label>
+<input type="text" id="stockSymbol">
+
+<button onclick="getStockInfo()">Get Stock Info</button>
+
+<h2>Stock Summary:</h2>
+<div id="stockSummary"></div>
+
+<script>
+    function getStockInfo() {
+        const stockSymbol = document.getElementById('stockSymbol').value;
+        const apiKey = '5ZSLOEXDX3J2Z0V6';
+
+        const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${stockSymbol}&apikey=${apiKey}`;
+
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const stockSummary = data['Global Quote'];
+            const displayText = stockSummary
+                ? `<strong>Symbol:</strong> ${stockSummary['01. symbol']}<br>
+                   <strong>Open:</strong> ${stockSummary['02. open']}<br>
+                   <strong>High:</strong> ${stockSummary['03. high']}<br>
+                   <strong>Low:</strong> ${stockSummary['04. low']}<br>
+                   <strong>Price:</strong> ${stockSummary['05. price']}<br>`
+                : 'Stock information not available';
+
+            document.getElementById('stockSummary').innerHTML = displayText;
+        })
+        .catch(error => {
+            console.error('Error fetching stock information:', error);
+        });
+    }
+</script>
+
+</body>
+</html>
