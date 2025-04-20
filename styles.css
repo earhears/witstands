@@ -32,6 +32,39 @@ h2 {
     margin-top: 0;
 }
 
+.service-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-block {
+    background-color: #3e633e; /* Same as section background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.service-block h3 {
+    margin-top: 0;
+}
+
+.service-block a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1a3d1a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.service-block a:hover {
+    background-color: #2f4f2f;
+}
+
 #chat-container {
     display: flex;
     flex-direction: column;
