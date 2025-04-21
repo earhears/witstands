@@ -51,6 +51,12 @@ h2 {
     margin-top: 0;
 }
 
+.service-block img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
 .service-block a {
     display: inline-block;
     margin-top: 10px;
