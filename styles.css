@@ -68,19 +68,31 @@ h2 {
     font-size: 2em; /* Larger font size for subheading */
 }
 
+
 .service-blocks {
     display: flex;
-    justify-content: space-between;
-    gap: 30px; /* Increased gap */
+    flex-direction: column; /* Stack service blocks on smaller screens */
+    gap: 20px; /* Default gap */
 }
 
 .service-block {
     background-color: #3e633e; /* Same as section background */
-    padding: 30px; /* Increased padding */
+    padding: 20px; /* Default padding */
     border-radius: 10px; /* Slightly larger border radius */
     box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Increased box shadow */
-    flex: 1;
     text-align: center;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .service-blocks {
+        flex-direction: row; /* Display service blocks in a row on larger screens */
+        gap: 30px; /* Increased gap for larger screens */
+    }
+
+    .service-block {
+        padding: 30px; /* Increased padding for larger screens */
+    }
 }
 
 .service-block h3 {
