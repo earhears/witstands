@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #1a3d1a; /* Darker green background */
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #122b12; /* Deeper green background */
     color: #ffffff; /* White text */
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #1a3d1a; /* Darker green for header */
+    background-color: #0d210d; /* Darker green for header */
     padding: 2em; /* Increased padding */
     text-align: center;
 }
@@ -28,7 +29,7 @@ main {
 }
 
 section {
-    background-color: #2f4f2f; /* Slightly lighter green for sections */
+    background-color: #1a3d1a; /* Slightly lighter green for sections */
     padding: 2em; /* Increased padding */
     margin-bottom: 2em; /* Increased margin */
     border-radius: 10px; /* Slightly larger border radius */
@@ -39,35 +40,6 @@ h2 {
     margin-top: 0;
     font-size: 2em; /* Larger font size for subheading */
 }
-header {
-    background-color: #1a3d1a; /* Darker green for header */
-    padding: 2em; /* Increased padding */
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em; /* Larger font size for heading */
-}
-
-main {
-    padding: 3em; /* Increased padding */
-    flex: 1; /* Allow main content to grow */
-}
-
-section {
-    background-color: #3e633e; /* Slightly lighter green for sections */
-    padding: 2em; /* Increased padding */
-    margin-bottom: 2em; /* Increased margin */
-    border-radius: 10px; /* Slightly larger border radius */
-    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Increased box shadow */
-}
-
-h2 {
-    margin-top: 0;
-    font-size: 2em; /* Larger font size for subheading */
-}
-
 
 .service-blocks {
     display: flex;
@@ -76,7 +48,7 @@ h2 {
 }
 
 .service-block {
-    background-color: #3e633e; /* Same as section background */
+    background-color: #1a3d1a; /* Same as section background */
     padding: 20px; /* Default padding */
     border-radius: 10px; /* Slightly larger border radius */
     box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Increased box shadow */
@@ -115,7 +87,7 @@ h2 {
     display: inline-block;
     margin-top: 15px; /* Increased margin */
     padding: 15px 30px; /* Increased padding */
-    background-color: #1a3d1a;
+    background-color: #0d210d;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px; /* Slightly larger border radius */
@@ -151,7 +123,7 @@ h2 {
 
 #send-btn {
     padding: 15px; /* Increased padding */
-    background-color: #1a3d1a;
+    background-color: #0d210d;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -167,7 +139,7 @@ h2 {
 
 #upload-btn {
     padding: 15px; /* Increased padding */
-    background-color: #1a3d1a;
+    background-color: #0d210d;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -197,7 +169,7 @@ h2 {
 
 #contact-form-element button[type="submit"] {
     padding: 15px; /* Increased padding */
-    background-color: #1a3d1a;
+    background-color: #0d210d;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -211,7 +183,7 @@ h2 {
 footer {
     text-align: center;
     padding: 1.5em; /* Increased padding */
-    background-color: #1a3d1a;
+    background-color: #0d210d;
     margin-top: auto; /* Push footer to bottom */
     font-size: 1em; /* Larger font size for footer text */
 }
